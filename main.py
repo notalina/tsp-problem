@@ -63,10 +63,9 @@ def print_result(path:List[Point]):
     distance = get_path_length(path)
     print("route: ", end="")
     for i in range(len(path)):
-        if i < len(path)-1:
-            print(f"{path[i].x}, {path[i].y} ->", end=" ")
-        else:
-            print(f"{path[i].x}, {path[i].y}")
+        print(f"{path[i].x}, {path[i].y} ->", end=" ")
+    print(f"{path[0].x}, {path[0].y}")
+    
     print(f"distance: {distance}")
 
 if __name__ == "__main__":
